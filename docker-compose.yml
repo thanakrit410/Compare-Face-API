@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+
+  # Python Application
+  server:
+    container_name: face-verify
+    build:
+      dockerfile: Dockerfile
+      context: "."
+    ports:
+      - 5000:5000
+    expose:
+      - 5000
